@@ -11,12 +11,11 @@ public class ContaBonus extends Conta {
 		super.creditar(valor);
 
 	}
-	
+
 	public void rederBonus() {
 		super.creditar(bonus);
 		bonus = 0;
-		
-		
+
 	}
 
 	public double getBonus() {
