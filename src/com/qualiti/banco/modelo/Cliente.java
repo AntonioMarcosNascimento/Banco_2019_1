@@ -3,30 +3,23 @@ package com.qualiti.banco.modelo;
 import java.util.Arrays;
 
 public class Cliente extends Pessoa implements Comparable<Cliente> {
-
+	
 	public Cliente() {
 		super();
-
 	}
-
+	
 	public Cliente(String nome, String cpf) {
 		super(nome, cpf);
-
 	}
 
 	@Override
-	
 	/**
-	 * retorna 0 qdo forem objetos com ordem igual
-	 * retorna -1 qdo this for menor que o parametro
-	 * retorna 1 qdo this for maior que o parametro
-	 * 
+	 * retorna 0 quando forem objetos com ordem igual
+	 * retorna -1 quando this for menor que o parametro
+	 * ratorna 1 quando this for maior que o parametro
 	 */
-	
 	public int compareTo(Cliente o) {
 		return this.getNome().compareTo(o.getNome());
-		
-
 	}
 	
 	public static void main(String[] args) {
@@ -44,11 +37,8 @@ public class Cliente extends Pessoa implements Comparable<Cliente> {
 		Arrays.sort(clientes);
 		
 		for(Cliente cli : clientes) {
-			
 			System.out.println(cli.getNome());
 		}
-		
-		
 	}
-
+	
 }

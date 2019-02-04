@@ -6,6 +6,4 @@ public enum TipoConta {
 	POUPANCA,
 	SALARIO
 
-	
-	
 }
